@@ -64,18 +64,6 @@
     border: 1px solid var(--line); border-radius: 6px; padding: 3px 8px;
   }
   .empty { color: var(--muted); padding: 24px 0; }
-  .notices-wrap { margin-top: 28px; }
-  .notices-title { font-size: 1.1rem; margin: 0 0 10px; }
-  .notice-head { margin-bottom: 8px; }
-  .notice { grid-template-columns: 130px minmax(280px, 1fr) 130px; }
-  .notice-date { font-size: 1.1rem; }
-  .notice-end { font-weight: 600; }
-  .notice-link { font-weight: 600; color: var(--accent); text-decoration: none; }
-  .notice-link:hover { text-decoration: underline; }
-  @media (max-width: 900px) {
-    .notice { grid-template-columns: 1fr; }
-  }
-
   @media (max-width: 900px) {
     .row.head { display: none; }
     .row { grid-template-columns: 1fr; gap: 8px; }
@@ -97,16 +85,6 @@
     <div>連結</div>
   </div>
 </main>
-
-<section class="table notices-wrap">
-  <h2 class="notices-title">高師大課外活動指導組｜社團贊助相關公告</h2>
-  <div class="notice-head row head">
-    <div>公告日期</div>
-    <div>公告標題</div>
-    <div>截止日</div>
-  </div>
-  <div id="notices"></div>
-</section>
 
 <script src="data.js"></script>
 <script>
@@ -154,6 +132,12 @@
     return `${y}/${Number(m)}/${Number(d)}`;
   };
 
+  // 高師大公告以 UNID 對應到基金會列：新公告會標示在該列的學校公告欄
+  const unidOf = url => ((url || '').split('UNID=')[1] || '').toUpperCase();
+  const newUnids = new Set(
+    ((data.club_notices && data.club_notices.items) || []).filter(i => i.is_new).map(i => i.unid.toUpperCase())
+  );
+
   const cell = (...children) => {
     const div = el('div');
     div.append(...children);
@@ -169,6 +153,7 @@
     );
 
     const title = el('div', 'ann-title', school.title || '（無標題）');
+    if (newUnids.has(unidOf(s.school_url))) title.append(el('span', 'badge-new', '新公告'));
     if (school.changed_now) title.append(el('span', 'badge-new', '本次有變動'));
     const parts = [title];
     if (school.period) parts.push(el('div', 'muted', '公告期間：' + school.period));
@@ -246,33 +231,6 @@
     sources.forEach(s => list.append(row(s)));
   }
 
-  const notices = document.getElementById('notices');
-  const notice = data.club_notices;
-  if (notice && notice.ok && notice.warning) {
-    notices.append(el('div', 'error', '本次列表讀取失敗，顯示已保存的歷史公告：' + notice.warning));
-  }
-  if (!notice || !notice.ok) {
-    notices.append(el('div', 'error', '無法讀取公告列表：' + (notice ? notice.warning : '沒有資料')));
-  } else if (!notice.items.length) {
-    notices.append(el('div', 'empty', '目前沒有相關公告。'));
-  } else {
-    notice.items.forEach(item => {
-      const end = daysLeft(item.end);
-      const r = el('div', 'row notice' + (end !== null && end < 0 ? ' expired' : ''));
-      const title = el('a', 'notice-link', item.title);
-      title.href = item.url;
-      title.target = '_blank';
-      title.rel = 'noopener';
-      if (item.is_new) title.append(el('span', 'badge-new', '新公告'));
-      r.append(
-        cell(el('div', 'deadline-date notice-date', formatDate(item.start))),
-        cell(title, el('div', 'muted', item.unit)),
-        cell(el('div', 'notice-end', formatDate(item.end)))
-      );
-      notices.append(r);
-    });
-  }
-  updated.textContent += `；社團贊助公告更新：${notice && notice.checked ? notice.checked.replace('T', ' ') : '—'}`;
 })();
 </script>
 </body>
