@@ -1,5 +1,5 @@
 window.FUND_DATA = {
-  "generated_at": "2026-10-30T14:53",
+  "generated_at": "2026-10-30T17:35",
   "sources": [
     {
       "name": "千佛山慈善基金會",
@@ -222,11 +222,28 @@ window.FUND_DATA = {
         "ok": true,
         "title": "2027金車曙光 寒假服務物資贊助計劃申請 | 金車文教基金會"
       }
+    },
+    {
+      "name": "國泰卓越獎助計畫",
+      "deadline_text": "請至官網確認",
+      "phone": "",
+      "email": "",
+      "need_doc": "",
+      "foundation_url": "https://www.edu.tw/helpdreams/",
+      "school_url": "",
+      "note": "教育部圓夢助學網首頁未列出本計畫，截止日與聯絡方式請至基金會官網確認。",
+      "deadline_iso": null,
+      "school": null,
+      "foundation": {
+        "url": "https://www.edu.tw/helpdreams/",
+        "ok": true,
+        "title": "教育部圓夢助學網"
+      }
     }
   ],
   "club_notices": {
     "ok": true,
-    "checked": "2026-10-30T14:53",
+    "checked": "2026-10-30T17:35",
     "items": [
       {
         "category": "活動快報",
