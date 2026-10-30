@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>116 寒假基金會贊助</title>
+<style>
+  :root {
+    --bg: #f5f6f8; --card: #ffffff; --text: #1f2937; --muted: #6b7280; --line: #e5e7eb; --head: #eef1f5;
+    --ok: #15803d; --warn: #b45309; --danger: #b91c1c; --gray: #6b7280; --accent: #2563eb; --new: #7c3aed;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --muted: #94a3b8; --line: #334155; --head: #172033;
+      --accent: #60a5fa;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --muted: #94a3b8; --line: #334155; --head: #172033; --accent: #60a5fa;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: "Microsoft JhengHei", "微軟正黑體", system-ui, sans-serif; line-height: 1.5; font-size: 14px;
+  }
+  header { max-width: 1280px; margin: 0 auto; padding: 20px 16px 8px; }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  .sub { color: var(--muted); font-size: .85rem; }
+  .stats { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 3px 12px; font-size: .85rem; }
+
+  .table { max-width: 1280px; margin: 12px auto 32px; padding: 0 16px; }
+  .row {
+    display: grid;
+    grid-template-columns: 220px 180px minmax(280px, 1fr) 230px 130px;
+    gap: 16px; align-items: start;
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 12px 16px; margin-bottom: 8px;
+  }
+  .row.head {
+    background: var(--head); font-size: .8rem; color: var(--muted); font-weight: 600;
+    padding: 8px 16px; margin-bottom: 8px;
+  }
+  .row.expired { opacity: .6; }
+  .name { font-weight: 700; font-size: .98rem; }
+  .pill { display: inline-block; font-size: .78rem; border-radius: 999px; padding: 1px 9px; white-space: nowrap; color: #fff; margin-bottom: 4px; }
+  .pill.ok { background: var(--ok); }
+  .pill.warn { background: var(--warn); }
+  .pill.danger { background: var(--danger); }
+  .pill.gray { background: var(--gray); }
+  .muted { color: var(--muted); font-size: .82rem; }
+  .deadline-date { font-size: 1.5rem; font-weight: 800; line-height: 1.2; margin: 2px 0 4px; }
+  .ann-title { font-weight: 600; }
+  .badge-new { background: var(--new); color: #fff; font-size: .72rem; border-radius: 6px; padding: 0 6px; margin-left: 6px; }
+  .error { color: var(--danger); font-size: .82rem; }
+  .url-text { font-size: .8rem; word-break: break-all; color: var(--text); background: var(--head); border-radius: 4px; padding: 2px 6px; margin-top: 2px; user-select: all; }
+  details summary { cursor: pointer; color: var(--accent); font-size: .82rem; margin-top: 4px; }
+  details p { margin: 4px 0 0; font-size: .82rem; color: var(--muted); word-break: break-all; }
+  .contact div { margin-bottom: 4px; }
+  .contact .k { color: var(--muted); font-size: .75rem; }
+  .links { display: flex; flex-direction: column; gap: 6px; }
+  .links a {
+    font-size: .85rem; color: var(--accent); text-decoration: none; text-align: center;
+    border: 1px solid var(--line); border-radius: 6px; padding: 3px 8px;
+  }
+  .empty { color: var(--muted); padding: 24px 0; }
+  .notices-wrap { margin-top: 28px; }
+  .notices-title { font-size: 1.1rem; margin: 0 0 10px; }
+  .notice-head { margin-bottom: 8px; }
+  .notice { grid-template-columns: 130px minmax(280px, 1fr) 130px; }
+  .notice-date { font-size: 1.1rem; }
+  .notice-end { font-weight: 600; }
+  .notice-link { font-weight: 600; color: var(--accent); text-decoration: none; }
+  .notice-link:hover { text-decoration: underline; }
+  @media (max-width: 900px) {
+    .notice { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 900px) {
+    .row.head { display: none; }
+    .row { grid-template-columns: 1fr; gap: 8px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>116 寒假服務隊｜基金會贊助一覽</h1>
+  <div class="sub" id="updated"></div>
+  <div class="stats" id="stats"></div>
+</header>
+<main class="table" id="list">
+  <div class="row head row-head-show">
+    <div>基金會</div>
+    <div>截止</div>
+    <div>學校公告</div>
+    <div>基金會承辦單位聯絡方式</div>
+    <div>連結</div>
+  </div>
+</main>
+
+<section class="table notices-wrap">
+  <h2 class="notices-title">高師大課外活動指導組｜社團贊助相關公告</h2>
+  <div class="notice-head row head">
+    <div>公告日期</div>
+    <div>公告標題</div>
+    <div>截止日</div>
+  </div>
+  <div id="notices"></div>
+</section>
+
+<script src="data.js"></script>
+<script>
+(function () {
+  const list = document.getElementById('list');
+  const updated = document.getElementById('updated');
+  const statsBox = document.getElementById('stats');
+  const data = window.FUND_DATA;
+
+  if (!data) {
+    updated.textContent = '找不到 data.js，請先執行 fetch_announcements.py。';
+    return;
+  }
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const el = (tag, cls, text) => {
+    const node = document.createElement(tag);
+    if (cls) node.className = cls;
+    if (text != null) node.textContent = text;
+    return node;
+  };
+
+  const daysLeft = iso => (iso ? Math.round((new Date(iso + 'T00:00:00') - today) / 86400000) : null);
+
+  const link = (text, url) => {
+    const a = el('a', '', text);
+    a.href = url;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    return a;
+  };
+
+  const deadlinePill = days => {
+    if (days === null) return el('span', 'pill gray', '未辨識截止日');
+    if (days < 0) return el('span', 'pill gray', '已截止');
+    if (days === 0) return el('span', 'pill danger', '今日截止');
+    return el('span', days <= 7 ? 'pill warn' : 'pill ok', `剩 ${days} 天`);
+  };
+
+  const formatDate = iso => {
+    if (!iso) return '—';
+    const [y, m, d] = iso.split('-');
+    return `${y}/${Number(m)}/${Number(d)}`;
+  };
+
+  const cell = (...children) => {
+    const div = el('div');
+    div.append(...children);
+    return div;
+  };
+
+  const schoolCell = s => {
+    const school = s.school;
+    if (!school) return cell(el('div', 'muted', s.note || '無學校公告連結'));
+    if (!school.ok) return cell(
+      el('div', 'error', '無法讀取學校公告，請直接前往：'),
+      el('div', 'url-text', school.url)
+    );
+
+    const title = el('div', 'ann-title', school.title || '（無標題）');
+    if (school.changed_now) title.append(el('span', 'badge-new', '本次有變動'));
+    const parts = [title];
+    if (school.period) parts.push(el('div', 'muted', '公告期間：' + school.period));
+    if (school.changed_at) parts.push(el('div', 'muted', '內容最後變動：' + school.changed_at.replace('T', ' ')));
+    return cell(...parts);
+  };
+
+  const contactCell = s => {
+    const box = el('div', 'contact');
+    const field = (key, value) => {
+      const d = el('div');
+      d.append(el('div', 'k', key), el('div', '', value));
+      return d;
+    };
+    box.append(field('電話', s.phone || '—'), field('信箱', s.email || '—'), field('學校推薦或函文', s.need_doc || '—'));
+    if (s.foundation && !s.foundation.ok) {
+      box.append(el('div', 'error', '基金會網站無法連線，請直接前往：'));
+      box.append(el('div', 'url-text', s.foundation.url));
+    }
+    return box;
+  };
+
+  const linksCell = s => {
+    const links = el('div', 'links');
+    if (s.school && s.school.url) links.append(link('學校公告', s.school.url));
+    if (s.foundation && s.foundation.url) links.append(link('基金會網站', s.foundation.url));
+    return links;
+  };
+
+  const row = s => {
+    const days = daysLeft(s.deadline_iso);
+    const r = el('div', 'row' + (days !== null && days < 0 ? ' expired' : ''));
+    r.append(
+      cell(el('div', 'name', s.name)),
+      cell(deadlinePill(days), el('div', 'deadline-date', formatDate(s.deadline_iso)), el('div', 'muted', s.deadline_text || '—')),
+      schoolCell(s),
+      contactCell(s),
+      linksCell(s)
+    );
+    return r;
+  };
+
+  // 依剩餘天數排序：進行中在前（天數少者優先），已截止與未辨識者在後
+  const rank = s => {
+    const d = daysLeft(s.deadline_iso);
+    if (d === null) return [2, 0];
+    if (d < 0) return [1, d];
+    return [0, d];
+  };
+  const sources = [...data.sources].sort((a, b) => {
+    const [ga, va] = rank(a);
+    const [gb, vb] = rank(b);
+    return ga - gb || va - vb;
+  });
+
+  const counts = { active: 0, today: 0, expired: 0, changed: 0 };
+  sources.forEach(s => {
+    const d = daysLeft(s.deadline_iso);
+    if (d !== null && d < 0) counts.expired++;
+    else { if (d === 0) counts.today++; counts.active++; }
+    if (s.school && s.school.changed_now) counts.changed++;
+  });
+
+  updated.textContent = `資料更新時間：${data.generated_at.replace('T', ' ')}（需定期執行 fetch_announcements.py 才會更新）`;
+  [
+    `進行中 ${counts.active}`,
+    `今日截止 ${counts.today}`,
+    `已截止 ${counts.expired}`,
+    `本次有變動 ${counts.changed}`,
+  ].forEach(text => statsBox.append(el('span', 'stat', text)));
+
+  if (!sources.length) {
+    list.append(el('div', 'empty', '表格中沒有資料。'));
+  } else {
+    sources.forEach(s => list.append(row(s)));
+  }
+
+  const notices = document.getElementById('notices');
+  const notice = data.club_notices;
+  if (notice && notice.ok && notice.warning) {
+    notices.append(el('div', 'error', '本次列表讀取失敗，顯示已保存的歷史公告：' + notice.warning));
+  }
+  if (!notice || !notice.ok) {
+    notices.append(el('div', 'error', '無法讀取公告列表：' + (notice ? notice.warning : '沒有資料')));
+  } else if (!notice.items.length) {
+    notices.append(el('div', 'empty', '目前沒有相關公告。'));
+  } else {
+    notice.items.forEach(item => {
+      const end = daysLeft(item.end);
+      const r = el('div', 'row notice' + (end !== null && end < 0 ? ' expired' : ''));
+      const title = el('a', 'notice-link', item.title);
+      title.href = item.url;
+      title.target = '_blank';
+      title.rel = 'noopener';
+      if (item.is_new) title.append(el('span', 'badge-new', '新公告'));
+      r.append(
+        cell(el('div', 'deadline-date notice-date', formatDate(item.start))),
+        cell(title, el('div', 'muted', item.unit)),
+        cell(el('div', 'notice-end', formatDate(item.end)))
+      );
+      notices.append(r);
+    });
+  }
+  updated.textContent += `；社團贊助公告更新：${notice && notice.checked ? notice.checked.replace('T', ' ') : '—'}`;
+})();
+</script>
+</body>
+</html>
