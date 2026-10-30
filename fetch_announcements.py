@@ -79,14 +79,14 @@ EXTRA_SOURCES = [
         "note": "服務時間 2027/1/5–2/28；審核結果於 2026/12/25 前公布；物資總值約 NT$3,000，寒暑假各 125 組。",
     },
     {
-        "name": "國泰卓越獎助計畫",
+        "name": "國泰慈善基金會（國泰卓越獎助計畫）",
         "deadline_text": "請至官網確認",
         "phone": "",
         "email": "",
         "need_doc": "",
-        "foundation_url": "https://www.edu.tw/helpdreams/",
+        "foundation_url": "https://patronc.cathaylife.com.tw/ODAY/F1/ODAYF100",
         "school_url": "",
-        "note": "教育部圓夢助學網首頁未列出本計畫，截止日與聯絡方式請至基金會官網確認。",
+        "note": "截止日與聯絡方式請至國泰慈善基金會官網確認。",
     },
 ]
 
