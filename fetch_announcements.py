@@ -80,13 +80,13 @@ EXTRA_SOURCES = [
     },
     {
         "name": "國泰慈善基金會（國泰卓越獎助計畫）",
-        "deadline_text": "請至官網確認",
+        "deadline_text": "2026年9月30日 17:00前（一律線上報名）",
         "phone": "",
         "email": "",
-        "need_doc": "",
+        "need_doc": "線上報名",
         "foundation_url": "https://patronc.cathaylife.com.tw/ODAY/F1/ODAYF100",
         "school_url": "",
-        "note": "截止日與聯絡方式請至國泰慈善基金會官網確認。",
+        "note": "2026年申請已於 9/30 截止；特色獎助類最高 20 萬元、卓越學子類每名 5 萬元。來源：國泰慈善基金會 2026 徵件公告（ODAYF100_news?id=10）。",
     },
 ]
 
