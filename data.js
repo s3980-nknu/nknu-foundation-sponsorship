@@ -1,5 +1,5 @@
 window.FUND_DATA = {
-  "generated_at": "2026-11-02T10:32",
+  "generated_at": "2026-11-04T17:12",
   "sources": [
     {
       "name": "千佛山慈善基金會",
@@ -51,8 +51,8 @@ window.FUND_DATA = {
     },
     {
       "name": "蔡衍明愛心基金會 （青年有愛大學希旺計劃）",
-      "deadline_text": "2026年5月10日至10月30日 email計畫書和同意書",
-      "deadline_iso": "2026-10-30",
+      "deadline_text": "2026年5月10日至12月10日 email計畫書和同意書",
+      "deadline_iso": "2026-12-10",
       "phone": "02-25545399 江小姐",
       "email": "charity@want-want.com",
       "need_doc": "由學務處課外活動組於申請表中推舉",
@@ -243,7 +243,7 @@ window.FUND_DATA = {
   ],
   "club_notices": {
     "ok": true,
-    "checked": "2026-11-02T10:32",
+    "checked": "2026-11-04T17:12",
     "items": [
       {
         "category": "活動快報",
