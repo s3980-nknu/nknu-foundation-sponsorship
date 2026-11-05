@@ -18,6 +18,7 @@ HERE = Path(__file__).resolve().parent
 DEFAULT_XLSX = HERE / "116基金會補助整理表.xlsx"
 STATE_FILE = HERE / "state.json"
 DATA_FILE = HERE / "data.js"
+INDEX_FILE = HERE / "index.html"
 HEADERS = {"User-Agent": "Mozilla/5.0 (fund-monitor; personal use)"}
 
 URL_RE = re.compile(r"https?://[^\s]+")
@@ -276,6 +277,13 @@ def fetch_club_notices(state, now):
     return {"ok": not warning or bool(items), "checked": now, "items": items, "warning": warning}
 
 
+def stamp_index_version(version):
+    """每次更新 data.js 時，在 index.html 的連結加上新版本號，讓瀏覽器不會沿用舊快取。"""
+    html = INDEX_FILE.read_text(encoding="utf-8")
+    html = re.sub(r'<script src="data\.js(\?v=[^"]*)?"></script>', f'<script src="data.js?v={version}"></script>', html)
+    INDEX_FILE.write_text(html, encoding="utf-8")
+
+
 def main():
     xlsx = Path(sys.argv[1]) if len(sys.argv) > 1 else DEFAULT_XLSX
     now = now_iso()
@@ -295,6 +303,7 @@ def main():
     # 避免內容中的 </script> 提前結束標籤
     payload = payload.replace("</", "<\\/")
     DATA_FILE.write_text("window.FUND_DATA = " + payload + ";\n", encoding="utf-8")
+    stamp_index_version(digest(payload))
     STATE_FILE.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"已輸出 {DATA_FILE}")
 
