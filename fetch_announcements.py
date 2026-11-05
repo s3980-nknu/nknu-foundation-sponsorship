@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup
 from openpyxl import load_workbook
 
 HERE = Path(__file__).resolve().parent
-DEFAULT_XLSX = Path(r"C:\Users\user\Downloads\116基金會補助整理表.xlsx")
+DEFAULT_XLSX = HERE / "116基金會補助整理表.xlsx"
 STATE_FILE = HERE / "state.json"
 DATA_FILE = HERE / "data.js"
 HEADERS = {"User-Agent": "Mozilla/5.0 (fund-monitor; personal use)"}
