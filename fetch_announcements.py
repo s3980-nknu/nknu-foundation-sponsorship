@@ -65,7 +65,7 @@ EXTRA_SOURCES = [
         "email": "Peihua@pxmart.com.tw",
         "need_doc": "線上提案（平台：青春有夢 投愛偏鄉）",
         "foundation_url": "https://www.phdf.org.tw/project/10/",
-        "school_url": "",
+        "school_url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=F5EEB7BE523ABC0967A3D8E1A8D03D3B619BACEF",
         "note": "寒假階段每年 11/1–11/15 申請，寒假成果每年 3 月底前繳交；詳細規定見基金會官網。",
     },
     {
@@ -75,7 +75,7 @@ EXTRA_SOURCES = [
         "email": "edu@kingcar.com.tw",
         "need_doc": "線上表單申請（需 Google 帳號登入）並上傳企劃書",
         "foundation_url": "https://kingcar.org.tw/project/501525",
-        "school_url": "",
+        "school_url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=76B28E9826E7F165722B0EA44E8220AA35A075E6",
         "note": "服務時間 2027/1/5–2/28；審核結果於 2026/12/25 前公布；物資總值約 NT$3,000，寒暑假各 125 組。",
     },
     {

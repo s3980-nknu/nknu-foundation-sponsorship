@@ -1,5 +1,5 @@
 window.FUND_DATA = {
-  "generated_at": "2026-11-04T17:12",
+  "generated_at": "2026-11-05T10:13",
   "sources": [
     {
       "name": "千佛山慈善基金會",
@@ -196,10 +196,18 @@ window.FUND_DATA = {
       "email": "Peihua@pxmart.com.tw",
       "need_doc": "線上提案（平台：青春有夢 投愛偏鄉）",
       "foundation_url": "https://www.phdf.org.tw/project/10/",
-      "school_url": "",
+      "school_url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=F5EEB7BE523ABC0967A3D8E1A8D03D3B619BACEF",
       "note": "寒假階段每年 11/1–11/15 申請，寒假成果每年 3 月底前繳交；詳細規定見基金會官網。",
       "deadline_iso": "2026-11-15",
-      "school": null,
+      "school": {
+        "url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=F5EEB7BE523ABC0967A3D8E1A8D03D3B619BACEF",
+        "ok": true,
+        "title": "轉知財團法人全聯佩樺基金會「青春有夢投愛偏鄉」補助計畫訊息，受理申請期限至115年11月9日截止",
+        "period": "2026-11-04 ~ 2026-11-15",
+        "excerpt": "轉知財團法人全聯佩樺基金會辦理「青春有夢投愛偏鄉」補助計畫相關資訊，請有意申請者參閱基金會公告內容。 因申請文件須學校正式公文，請有意申請之單位於115年11月9日前將申請文件送交課外組，以利辦理後續公文作業。",
+        "changed_at": null,
+        "changed_now": false
+      },
       "foundation": {
         "url": "https://www.phdf.org.tw/project/10/",
         "ok": true,
@@ -213,10 +221,18 @@ window.FUND_DATA = {
       "email": "edu@kingcar.com.tw",
       "need_doc": "線上表單申請（需 Google 帳號登入）並上傳企劃書",
       "foundation_url": "https://kingcar.org.tw/project/501525",
-      "school_url": "",
+      "school_url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=76B28E9826E7F165722B0EA44E8220AA35A075E6",
       "note": "服務時間 2027/1/5–2/28；審核結果於 2026/12/25 前公布；物資總值約 NT$3,000，寒暑假各 125 組。",
       "deadline_iso": "2026-12-15",
-      "school": null,
+      "school": {
+        "url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=76B28E9826E7F165722B0EA44E8220AA35A075E6",
+        "ok": true,
+        "title": "轉知金車文教基金會2027金車曙光寒假服務物資贊助計劃，申請期限至115年12月15日止",
+        "period": "2026-11-04 ~ 2026-12-15",
+        "excerpt": "轉知金車文教基金會2027金車曙光寒假服務物資贊助計劃，申請期限至115年12月15日止，詳見附件來文與基金會網站。",
+        "changed_at": null,
+        "changed_now": false
+      },
       "foundation": {
         "url": "https://kingcar.org.tw/project/501525",
         "ok": true,
@@ -243,8 +259,30 @@ window.FUND_DATA = {
   ],
   "club_notices": {
     "ok": true,
-    "checked": "2026-11-04T17:12",
+    "checked": "2026-11-05T10:13",
     "items": [
+      {
+        "category": "活動快報",
+        "url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=76B28E9826E7F165722B0EA44E8220AA35A075E6",
+        "title": "轉知金車文教基金會2027金車曙光寒假服務物資贊助計劃，申請期限至115年12月15日止",
+        "unit": "學生事務處課外活動指導組",
+        "start": "2026-11-04",
+        "end": "2026-12-15",
+        "unid": "76B28E9826E7F165722B0EA44E8220AA35A075E6",
+        "first_seen": "2026-11-05T10:13",
+        "is_new": true
+      },
+      {
+        "category": "活動快報",
+        "url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=F5EEB7BE523ABC0967A3D8E1A8D03D3B619BACEF",
+        "title": "轉知財團法人全聯佩樺基金會「青春有夢投愛偏鄉」補助計畫訊息，受理申請期限至115年11月9日截止",
+        "unit": "學生事務處課外活動指導組",
+        "start": "2026-11-04",
+        "end": "2026-11-15",
+        "unid": "F5EEB7BE523ABC0967A3D8E1A8D03D3B619BACEF",
+        "first_seen": "2026-11-05T10:13",
+        "is_new": true
+      },
       {
         "category": "活動快報",
         "url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=907DD85A18C35A05D6E7C87943612F612EBAA3BC",

@@ -30,5 +30,13 @@
   "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=907DD85A18C35A05D6E7C87943612F612EBAA3BC": {
     "fingerprint": "9d66cda69f32ea0a",
     "changed_at": null
+  },
+  "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=F5EEB7BE523ABC0967A3D8E1A8D03D3B619BACEF": {
+    "fingerprint": "a419ca4f7876cf46",
+    "changed_at": null
+  },
+  "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=76B28E9826E7F165722B0EA44E8220AA35A075E6": {
+    "fingerprint": "71f9d822ee2ec8c0",
+    "changed_at": null
   }
 }
