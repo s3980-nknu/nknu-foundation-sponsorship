@@ -1,5 +1,5 @@
 window.FUND_DATA = {
-  "generated_at": "2026-11-05T10:13",
+  "generated_at": "2026-11-05T02:15",
   "sources": [
     {
       "name": "千佛山慈善基金會",
@@ -138,7 +138,7 @@ window.FUND_DATA = {
       "foundation": {
         "url": "https://drive.google.com/drive/folders/1hCXwCcMs7GwGOyt0LL4z65qyiV8N8UMt",
         "ok": true,
-        "title": "好里家社福協會第8屆《大專服利社》簡章資料 - Google 雲端硬碟"
+        "title": "好里家社福協會第8屆《大專服利社》簡章資料 - Google Drive"
       }
     },
     {
@@ -259,7 +259,7 @@ window.FUND_DATA = {
   ],
   "club_notices": {
     "ok": true,
-    "checked": "2026-11-05T10:13",
+    "checked": "2026-11-05T02:15",
     "items": [
       {
         "category": "活動快報",
@@ -270,7 +270,7 @@ window.FUND_DATA = {
         "end": "2026-12-15",
         "unid": "76B28E9826E7F165722B0EA44E8220AA35A075E6",
         "first_seen": "2026-11-05T10:13",
-        "is_new": true
+        "is_new": false
       },
       {
         "category": "活動快報",
@@ -281,7 +281,7 @@ window.FUND_DATA = {
         "end": "2026-11-15",
         "unid": "F5EEB7BE523ABC0967A3D8E1A8D03D3B619BACEF",
         "first_seen": "2026-11-05T10:13",
-        "is_new": true
+        "is_new": false
       },
       {
         "category": "活動快報",
