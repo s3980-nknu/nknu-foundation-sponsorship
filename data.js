@@ -1,5 +1,5 @@
 window.FUND_DATA = {
-  "generated_at": "2026-11-06T00:37",
+  "generated_at": "2026-11-07T00:34",
   "sources": [
     {
       "name": "千佛山慈善基金會",
@@ -236,7 +236,7 @@ window.FUND_DATA = {
       "foundation": {
         "url": "https://kingcar.org.tw/project/501525",
         "ok": true,
-        "title": "2027金車曙光 寒假服務物資贊助計劃申請 | 金車文教基金會"
+        "title": "Making sure you're not a bot!"
       }
     },
     {
@@ -259,7 +259,7 @@ window.FUND_DATA = {
   ],
   "club_notices": {
     "ok": true,
-    "checked": "2026-11-06T00:37",
+    "checked": "2026-11-07T00:34",
     "items": [
       {
         "category": "活動快報",
