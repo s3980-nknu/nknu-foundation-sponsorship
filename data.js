@@ -1,5 +1,5 @@
 window.FUND_DATA = {
-  "generated_at": "2026-11-07T00:34",
+  "generated_at": "2026-11-08T00:34",
   "sources": [
     {
       "name": "千佛山慈善基金會",
@@ -89,8 +89,8 @@ window.FUND_DATA = {
       },
       "foundation": {
         "url": "https://www.chailease.org.tw/public-welfare-project",
-        "ok": true,
-        "title": "中租基金會官方網站"
+        "ok": false,
+        "error": "502 Server Error: Bad Gateway for url: https://www.chailease.org.tw/public-welfare-project"
       }
     },
     {
@@ -259,7 +259,7 @@ window.FUND_DATA = {
   ],
   "club_notices": {
     "ok": true,
-    "checked": "2026-11-07T00:34",
+    "checked": "2026-11-08T00:34",
     "items": [
       {
         "category": "活動快報",
