@@ -86,7 +86,7 @@
   </div>
 </main>
 
-<script src="data.js?v=688df59d30289659"></script>
+<script src="data.js?v=03d8dbe90b1d5b76"></script>
 <script>
 (function () {
   const list = document.getElementById('list');
@@ -179,8 +179,13 @@
   const linksCell = s => {
     const links = el('div', 'links');
     if (s.school && s.school.url) links.append(link('學校公告', s.school.url));
-    if (s.foundation && s.foundation.url) links.append(link('基金會網站', s.foundation.url));
-    (s.foundation_extra || []).forEach((u, i) => links.append(link('基金會網站 ' + (i + 2), u)));
+    const foundationLabel = u => {
+      if (/huaru\.org\.tw/.test(u)) return '基金會網站(華儒)';
+      if (/hanru\.org\.tw/.test(u)) return '基金會網站(漢儒)';
+      return '基金會網站';
+    };
+    if (s.foundation && s.foundation.url) links.append(link(foundationLabel(s.foundation.url), s.foundation.url));
+    (s.foundation_extra || []).forEach(u => links.append(link(foundationLabel(u), u)));
     return links;
   };
 
