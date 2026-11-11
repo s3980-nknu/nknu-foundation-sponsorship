@@ -108,6 +108,7 @@ def load_sources(xlsx_path):
             "email": clean(email),
             "need_doc": clean(need_doc),
             "foundation_url": first_url(found_url),
+            "foundation_extra": [m.rstrip(")）,，") for m in URL_RE.findall(str(found_url or ""))[1:]],
             "school_url": first_url(school_url),
         })
     for extra in EXTRA_SOURCES:

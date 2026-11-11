@@ -1,5 +1,5 @@
 window.FUND_DATA = {
-  "generated_at": "2026-11-11T12:06",
+  "generated_at": "2026-11-11T13:40",
   "sources": [
     {
       "name": "千佛山慈善基金會",
@@ -9,6 +9,7 @@ window.FUND_DATA = {
       "email": "cfscharity66@gmail.com",
       "need_doc": "需學校紙本公文一份(請社團自行郵寄)",
       "foundation_url": "https://www.cfs1368.org.tw/about3.aspx?getId=01C6A10532A7080E",
+      "foundation_extra": [],
       "school_url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=97E00E541A15ECF002BA3C8349C52E82F3A8CC40",
       "school": {
         "url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=97E00E541A15ECF002BA3C8349C52E82F3A8CC40",
@@ -33,6 +34,7 @@ window.FUND_DATA = {
       "email": "info@everglorfoundation.org.tw",
       "need_doc": "由學校發函向基金會統一申請",
       "foundation_url": "https://www.evergloryfoundation.org/pricingcont.php?idno=1&mid=3",
+      "foundation_extra": [],
       "school_url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=68A2903A86CDB358BF7ECF7E49818680994ED0CF",
       "school": {
         "url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=68A2903A86CDB358BF7ECF7E49818680994ED0CF",
@@ -57,6 +59,7 @@ window.FUND_DATA = {
       "email": "charity@want-want.com",
       "need_doc": "由學務處課外活動組於申請表中推舉",
       "foundation_url": "",
+      "foundation_extra": [],
       "school_url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=7AFCCD509755F4DE613524937AF8365825547299",
       "school": {
         "url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=7AFCCD509755F4DE613524937AF8365825547299",
@@ -77,6 +80,7 @@ window.FUND_DATA = {
       "email": "MengShuanYeh@chailease.com.tw",
       "need_doc": "學校推薦意見請社團指導老師填寫",
       "foundation_url": "https://www.chailease.org.tw/public-welfare-project",
+      "foundation_extra": [],
       "school_url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=F972C15562BD7094B903CDC7F069CC48CAC76C0B",
       "school": {
         "url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=F972C15562BD7094B903CDC7F069CC48CAC76C0B",
@@ -101,6 +105,7 @@ window.FUND_DATA = {
       "email": "huayuan.ef@hua-yuan.com",
       "need_doc": "無需學校函文或推薦",
       "foundation_url": "https://reurl.cc/NOE2x6",
+      "foundation_extra": [],
       "school_url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=84D135B04D65763C6054BA9538FD7B7536E8BC97",
       "school": {
         "url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=84D135B04D65763C6054BA9538FD7B7536E8BC97",
@@ -125,6 +130,7 @@ window.FUND_DATA = {
       "email": "holiga.wuzai@gmail.com",
       "need_doc": "申請表須送課外組核章",
       "foundation_url": "https://drive.google.com/drive/folders/1hCXwCcMs7GwGOyt0LL4z65qyiV8N8UMt",
+      "foundation_extra": [],
       "school_url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=C6657875B87B7133FB4407CB80F740E51E7C8B4B",
       "school": {
         "url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=C6657875B87B7133FB4407CB80F740E51E7C8B4B",
@@ -149,6 +155,9 @@ window.FUND_DATA = {
       "email": "hanruadm@gmail.com",
       "need_doc": "由學校統一發文申請，申請表及企劃書紙本送課外組",
       "foundation_url": "https://www.huaru.org.tw/",
+      "foundation_extra": [
+        "https://www.hanru.org.tw/"
+      ],
       "school_url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=1B033208B7962451C36AE2F81BE31FAC7C810709",
       "school": {
         "url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=1B033208B7962451C36AE2F81BE31FAC7C810709",
@@ -173,6 +182,9 @@ window.FUND_DATA = {
       "email": "nyny22888@tzuchi.org.tw",
       "need_doc": "無需學校配合；由團隊線上報名並上傳電子檔",
       "foundation_url": "https://url.tzuchi.org/s/UEc9JK",
+      "foundation_extra": [
+        "https://www.facebook.com/tzuching.global/"
+      ],
       "school_url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=907DD85A18C35A05D6E7C87943612F612EBAA3BC",
       "school": {
         "url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=907DD85A18C35A05D6E7C87943612F612EBAA3BC",
@@ -259,7 +271,7 @@ window.FUND_DATA = {
   ],
   "club_notices": {
     "ok": true,
-    "checked": "2026-11-11T12:06",
+    "checked": "2026-11-11T13:40",
     "items": [
       {
         "category": "活動快報",

@@ -86,7 +86,7 @@
   </div>
 </main>
 
-<script src="data.js?v=d95e539dd013149f"></script>
+<script src="data.js?v=688df59d30289659"></script>
 <script>
 (function () {
   const list = document.getElementById('list');
@@ -180,6 +180,7 @@
     const links = el('div', 'links');
     if (s.school && s.school.url) links.append(link('學校公告', s.school.url));
     if (s.foundation && s.foundation.url) links.append(link('基金會網站', s.foundation.url));
+    (s.foundation_extra || []).forEach((u, i) => links.append(link('基金會網站 ' + (i + 2), u)));
     return links;
   };
 
