@@ -1,5 +1,5 @@
 window.FUND_DATA = {
-  "generated_at": "2026-11-11T00:35",
+  "generated_at": "2026-11-11T12:06",
   "sources": [
     {
       "name": "千佛山慈善基金會",
@@ -138,7 +138,7 @@ window.FUND_DATA = {
       "foundation": {
         "url": "https://drive.google.com/drive/folders/1hCXwCcMs7GwGOyt0LL4z65qyiV8N8UMt",
         "ok": true,
-        "title": "好里家社福協會第8屆《大專服利社》簡章資料 - Google Drive"
+        "title": "好里家社福協會第8屆《大專服利社》簡章資料 - Google 雲端硬碟"
       }
     },
     {
@@ -148,7 +148,7 @@ window.FUND_DATA = {
       "phone": "漢儒 02-2311-2728 華儒 02-2388-8823",
       "email": "hanruadm@gmail.com",
       "need_doc": "由學校統一發文申請，申請表及企劃書紙本送課外組",
-      "foundation_url": "https://www.hanru.org.tw/",
+      "foundation_url": "https://www.huaru.org.tw/",
       "school_url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=1B033208B7962451C36AE2F81BE31FAC7C810709",
       "school": {
         "url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=1B033208B7962451C36AE2F81BE31FAC7C810709",
@@ -160,9 +160,9 @@ window.FUND_DATA = {
         "changed_now": false
       },
       "foundation": {
-        "url": "https://www.hanru.org.tw/",
+        "url": "https://www.huaru.org.tw/",
         "ok": true,
-        "title": "訊息公告 | 財團法人漢儒文教基金會"
+        "title": "財團法人華儒青年關懷基金會 | 社區關懷 | 獎學金 | 公益社團"
       }
     },
     {
@@ -236,7 +236,7 @@ window.FUND_DATA = {
       "foundation": {
         "url": "https://kingcar.org.tw/project/501525",
         "ok": true,
-        "title": "Making sure you're not a bot!"
+        "title": "2027金車曙光 寒假服務物資贊助計劃申請 | 金車文教基金會"
       }
     },
     {
@@ -259,7 +259,7 @@ window.FUND_DATA = {
   ],
   "club_notices": {
     "ok": true,
-    "checked": "2026-11-11T00:35",
+    "checked": "2026-11-11T12:06",
     "items": [
       {
         "category": "活動快報",
