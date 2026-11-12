@@ -1,5 +1,5 @@
 window.FUND_DATA = {
-  "generated_at": "2026-11-11T13:56",
+  "generated_at": "2026-11-12T00:49",
   "sources": [
     {
       "name": "千佛山慈善基金會",
@@ -144,7 +144,7 @@ window.FUND_DATA = {
       "foundation": {
         "url": "https://drive.google.com/drive/folders/1hCXwCcMs7GwGOyt0LL4z65qyiV8N8UMt",
         "ok": true,
-        "title": "好里家社福協會第8屆《大專服利社》簡章資料 - Google 雲端硬碟"
+        "title": "好里家社福協會第8屆《大專服利社》簡章資料 - Google Drive"
       }
     },
     {
@@ -248,7 +248,7 @@ window.FUND_DATA = {
       "foundation": {
         "url": "https://kingcar.org.tw/project/501525",
         "ok": true,
-        "title": "2027金車曙光 寒假服務物資贊助計劃申請 | 金車文教基金會"
+        "title": "Making sure you're not a bot!"
       }
     },
     {
@@ -271,7 +271,7 @@ window.FUND_DATA = {
   ],
   "club_notices": {
     "ok": true,
-    "checked": "2026-11-11T13:56",
+    "checked": "2026-11-12T00:49",
     "items": [
       {
         "category": "活動快報",
