@@ -1,5 +1,5 @@
 window.FUND_DATA = {
-  "generated_at": "2026-11-13T00:41",
+  "generated_at": "2026-11-14T00:35",
   "sources": [
     {
       "name": "千佛山慈善基金會",
@@ -271,8 +271,19 @@ window.FUND_DATA = {
   ],
   "club_notices": {
     "ok": true,
-    "checked": "2026-11-13T00:41",
+    "checked": "2026-11-14T00:35",
     "items": [
+      {
+        "category": "活動快報",
+        "url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=8838A9EC1369E6376FA74D79DBEE5FE183F92852",
+        "title": "高師大學生社團評鑑擬於115年12月10日辦理，請學生自治組織和社團踴躍報名參加",
+        "unit": "學生事務處課外活動指導組",
+        "start": "2026-11-13",
+        "end": "2026-12-31",
+        "unid": "8838A9EC1369E6376FA74D79DBEE5FE183F92852",
+        "first_seen": "2026-11-14T00:35",
+        "is_new": true
+      },
       {
         "category": "活動快報",
         "url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=76B28E9826E7F165722B0EA44E8220AA35A075E6",
