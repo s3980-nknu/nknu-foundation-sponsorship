@@ -1,5 +1,5 @@
 window.FUND_DATA = {
-  "generated_at": "2026-11-17T00:40",
+  "generated_at": "2026-11-18T00:48",
   "sources": [
     {
       "name": "千佛山慈善基金會",
@@ -271,7 +271,7 @@ window.FUND_DATA = {
   ],
   "club_notices": {
     "ok": true,
-    "checked": "2026-11-17T00:40",
+    "checked": "2026-11-18T00:48",
     "items": [
       {
         "category": "活動快報",
