@@ -1,5 +1,5 @@
 window.FUND_DATA = {
-  "generated_at": "2026-11-24T00:45",
+  "generated_at": "2026-11-25T00:49",
   "sources": [
     {
       "name": "千佛山慈善基金會",
@@ -271,8 +271,19 @@ window.FUND_DATA = {
   ],
   "club_notices": {
     "ok": true,
-    "checked": "2026-11-24T00:45",
+    "checked": "2026-11-25T00:49",
     "items": [
+      {
+        "category": "活動快報",
+        "url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=8C2CA3C2EBDBF007775A97247C0C55A4EE559893",
+        "title": "社團法人台灣無毒世界協會辦理「無毒世代・舞所不在｜REAL BEAT舞蹈競賽」",
+        "unit": "學生事務處課外活動指導組",
+        "start": "2026-11-24",
+        "end": "2026-11-25",
+        "unid": "8C2CA3C2EBDBF007775A97247C0C55A4EE559893",
+        "first_seen": "2026-11-25T00:49",
+        "is_new": true
+      },
       {
         "category": "活動快報",
         "url": "https://sso.nknu.edu.tw/News/lastNews.aspx?UNID=8838A9EC1369E6376FA74D79DBEE5FE183F92852",
